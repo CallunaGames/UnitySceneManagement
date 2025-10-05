@@ -1,12 +1,11 @@
 {
-    "name": "Calluna.Template.Tests",
-    "rootNamespace": "Calluna.Template.Tests",
+    "name": "Calluna.SceneManagement",
+    "rootNamespace": "Calluna.SceneManagement",
     "references": [
-        "GUID:6e11b6063e739f6468948dab11caf494"
+        "GUID:ee1ec607af9e75b4bbfdf5be5512be2b",
+        "GUID:fb92ad7c22f767448a052126eb8fa706"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

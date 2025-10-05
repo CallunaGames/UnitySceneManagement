@@ -1,0 +1,18 @@
+{
+    "name": "Calluna.SceneManagement.Tests",
+    "rootNamespace": "Calluna.SceneManagement.Tests",
+    "references": [
+        "GUID:304ac9cfd49b6b345bb5846fc5367e38"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
