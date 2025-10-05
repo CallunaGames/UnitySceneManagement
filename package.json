@@ -1,11 +1,11 @@
 {
-  "name": "com.calluna.template",
+  "name": "com.calluna.scenemanagement",
   "version": "0.1.0",
-  "displayName": "Calluna Unity Package Template",
+  "displayName": "Calluna Unity Scene Management",
   "description": "",
   "unity": "6000.58",
   "unityRelease": "",
-  "documentationUrl": "https://github.com/CallunaGames/CallunaUnityTemplate",
+  "documentationUrl": "https://github.com/CallunaGames/UnitySceneManagement",
   "changelogUrl": "",
   "licensesUrl": "",
   "dependencies": {
