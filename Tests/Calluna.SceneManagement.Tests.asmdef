@@ -2,17 +2,21 @@
     "name": "Calluna.SceneManagement.Tests",
     "rootNamespace": "Calluna.SceneManagement.Tests",
     "references": [
-        "GUID:304ac9cfd49b6b345bb5846fc5367e38"
+        "GUID:304ac9cfd49b6b345bb5846fc5367e38",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
     "versionDefines": [],
     "noEngineReferences": false
 }
