@@ -1,45 +1,59 @@
 using System;
 using System.Collections.Generic;
+using Calluna.DI;
 using Calluna.Process;
 using UnityEngine;
 
 namespace Calluna.SceneManagement
 {
-    public class SceneChangesExecutor : MonoBehaviour
+    public class SceneChangesExecutor : MonoBehaviour, Injectable
     {
-        [SerializeField] private List<SceneChange> _changes = new List<SceneChange>();
-        [SerializeField] private Processor _processor;
-
+        private Processor _processor;
+        
+        public void Inject(Resolver resolver)
+        {
+            _processor = resolver.Resolve<Processor>();
+        }
+        
         private void Reset()
         {
             _processor = GetComponent<Processor>();
         }
 
-        public void Execute()
+        public void Execute(SceneChange change)
         {
-            _processor.Process(CreateProcess());
+            _processor.Process(CreateProcess(change));
         }
 
-        private ControllableProcess CreateProcess()
+        public void Execute(List<SceneChange> changes)
         {
-            if (_changes.Count == 0)
+            _processor.Process(CreateProcess(changes));
+        }
+
+        private ControllableProcess CreateProcess(List<SceneChange> changes)
+        {
+            if (changes.Count == 0)
             {
                 throw new InvalidOperationException(
                     "Failed to execute scene management commands. There are no commands defined");
             }
 
-            if (_changes.Count == 1)
+            if (changes.Count == 1)
             {
-                return new SceneChangeProcess(_changes[0]);
+                return CreateProcess(changes[0]);
             }
-
-            SceneChangeProcess[] processes = new SceneChangeProcess[_changes.Count];
-            for (int i = 0; i < _changes.Count; i++)
+            
+            SceneChangeProcess[] processes = new SceneChangeProcess[changes.Count];
+            for (int i = 0; i < changes.Count; i++)
             {
-                processes[i] = new SceneChangeProcess(_changes[i]);
+                processes[i] = CreateProcess(changes[i]);
             }
-
             return new ProcessSequence(processes, "Scene Management Commands");
+        }
+
+        private SceneChangeProcess CreateProcess(SceneChange change)
+        {
+            return new SceneChangeProcess(change);
         }
     }
 }

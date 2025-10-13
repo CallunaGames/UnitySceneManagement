@@ -1,19 +1,23 @@
+using System.Collections.Generic;
+using System.Linq;
+using Calluna.DI;
 using UnityEngine;
 
 namespace Calluna.SceneManagement
 {
-    public class ExecuteSceneChangesOnStart : MonoBehaviour
+    public class ExecuteSceneChangesOnStart : MonoBehaviour, Injectable, Initializable
     {
-        [SerializeField] private SceneChangesExecutor _sceneChangesExecutor;
-
-        private void Reset()
+        [SerializeField] private List<SceneChangeSettings> _changes = new List<SceneChangeSettings>();
+        private SceneChangesExecutor _sceneChangesExecutor;
+        
+        public void Inject(Resolver resolver)
         {
-            _sceneChangesExecutor = GetComponent<SceneChangesExecutor>();
+            _sceneChangesExecutor = resolver.Resolve<SceneChangesExecutor>();
         }
 
-        private void Start()
+        public void Initialize()
         {
-            _sceneChangesExecutor.Execute();
+            _sceneChangesExecutor.Execute(_changes.Select(c => c.Create()).ToList());
         }
     }
 }

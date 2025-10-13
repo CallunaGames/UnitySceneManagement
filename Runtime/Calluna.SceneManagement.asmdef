@@ -2,8 +2,9 @@
     "name": "Calluna.SceneManagement",
     "rootNamespace": "Calluna.SceneManagement",
     "references": [
-        "GUID:ee1ec607af9e75b4bbfdf5be5512be2b",
-        "GUID:fb92ad7c22f767448a052126eb8fa706"
+        "GUID:fb92ad7c22f767448a052126eb8fa706",
+        "GUID:a4e2fcc097ca52d46a2cc62ef3c5e9bf",
+        "GUID:5893009818d5b804aae6455019df9391"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

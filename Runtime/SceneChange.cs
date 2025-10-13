@@ -1,12 +1,8 @@
-using System;
-using UnityEngine;
-
-namespace Calluna.SceneManagement
+﻿namespace Calluna.SceneManagement
 {
-    [Serializable]
-    public class SceneChange
+    public struct SceneChange
     {
-        [field: SerializeField] public string Scene { get; private set; }
-        [field: SerializeField] public SceneChangeType Mode { get; private set; } = SceneChangeType.Load;
+        public string Scene;
+        public SceneChangeMode Mode;
     }
 }

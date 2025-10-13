@@ -44,11 +44,11 @@ namespace Calluna.SceneManagement
         {
             switch (_sceneChange.Mode)
             {
-                case SceneChangeType.Load:
+                case SceneChangeMode.Load:
                     return SceneManager.LoadSceneAsync(_sceneChange.Scene, LoadSceneMode.Single);
-                case SceneChangeType.LoadAdditive:
+                case SceneChangeMode.LoadAdditive:
                     return SceneManager.LoadSceneAsync(_sceneChange.Scene, LoadSceneMode.Additive);
-                case SceneChangeType.Unload:
+                case SceneChangeMode.Unload:
                     return SceneManager.UnloadSceneAsync(_sceneChange.Scene);
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -59,11 +59,11 @@ namespace Calluna.SceneManagement
         {
             switch (_sceneChange.Mode)
             {
-                case SceneChangeType.Load:
+                case SceneChangeMode.Load:
                     return $"Loading {_sceneChange.Scene}";
-                case SceneChangeType.LoadAdditive:
+                case SceneChangeMode.LoadAdditive:
                     return $"Loading {_sceneChange.Scene} additive";
-                case SceneChangeType.Unload:
+                case SceneChangeMode.Unload:
                     return $"Unloading {_sceneChange.Scene}";
                 default:
                     throw new ArgumentOutOfRangeException();

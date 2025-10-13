@@ -1,6 +1,6 @@
 namespace Calluna.SceneManagement
 {
-    public enum SceneChangeType
+    public enum SceneChangeMode
     {
         Load = 1 << 0,
         LoadAdditive = 1 << 1,

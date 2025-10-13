@@ -7,7 +7,7 @@ namespace Calluna.SceneManagement.Editor
     using UnityEditor;
     using UnityEngine;
 
-    [CustomPropertyDrawer(typeof(SceneChange))]
+    [CustomPropertyDrawer(typeof(SceneChangeSettings))]
     public class SceneChangeDrawer : PropertyDrawer
     {
         private const string _sceneBacking = "<Scene>k__BackingField";
@@ -59,7 +59,7 @@ namespace Calluna.SceneManagement.Editor
             if (currentIndex == -1) currentIndex = 0; // fallback to None
 
             // Draw header
-            EditorGUI.LabelField(headerRect, GetHeader(sceneProp.stringValue, (SceneChangeType)modeProp.intValue),
+            EditorGUI.LabelField(headerRect, GetHeader(sceneProp.stringValue, (SceneChangeMode)modeProp.intValue),
                 EditorStyles.boldLabel);
 
             // Draw popup
@@ -99,20 +99,20 @@ namespace Calluna.SceneManagement.Editor
             _lastRefresh = EditorApplication.timeSinceStartup;
         }
 
-        private string GetHeader(string sceneName, SceneChangeType sceneChangeType)
+        private string GetHeader(string sceneName, SceneChangeMode sceneChangeMode)
         {
-            if (string.IsNullOrEmpty(sceneName) || sceneChangeType <= 0)
+            if (string.IsNullOrEmpty(sceneName) || sceneChangeMode <= 0)
             {
                 return "<color=#FF0000>Missing scene change update</color>";
             }
 
-            switch (sceneChangeType)
+            switch (sceneChangeMode)
             {
-                case SceneChangeType.Load:
+                case SceneChangeMode.Load:
                     return $"Load single scene '{sceneName}'";
-                case SceneChangeType.LoadAdditive:
+                case SceneChangeMode.LoadAdditive:
                     return $"Load scene '{sceneName}' additive";
-                case SceneChangeType.Unload:
+                case SceneChangeMode.Unload:
                     return $"Unload scene '{sceneName}'";
             }
 
