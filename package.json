@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "displayName": "Calluna Unity Scene Management",
   "description": "",
-  "unity": "6000.58",
+  "unity": "6000.33",
   "unityRelease": "",
   "documentationUrl": "https://github.com/CallunaGames/UnitySceneManagement",
   "changelogUrl": "",
   "licensesUrl": "",
   "dependencies": {
-    
+    "com.calluna.unityprocess": "https://github.com/CallunaGames/CallunaUnityProcess.git#v1.0.0",
+    "com.calluna.unitycore": "https://github.com/CallunaGames/CallunaUnityCore.git#v1.0.0",
+    "com.calluna.unitydi": "https://github.com/CallunaGames/CallunaUnityDI.git#v1.0.0"
  },
  "keywords": [
     
