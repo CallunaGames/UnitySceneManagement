@@ -11,7 +11,7 @@ namespace Calluna.SceneManagement.Editor
     public class SceneChangeDrawer : PropertyDrawer
     {
         private const string _sceneBacking = "<Scene>k__BackingField";
-        private const string modeBacking = "<Mode>k__BackingField";
+        private const string _modeBacking = "<Mode>k__BackingField";
 
         private static string[] _sceneNames;
         private static double _lastRefresh;
@@ -32,7 +32,7 @@ namespace Calluna.SceneManagement.Editor
 
             // Find the serialized backing fields
             var sceneProp = property.FindPropertyRelative(_sceneBacking);
-            var modeProp = property.FindPropertyRelative(modeBacking);
+            var modeProp = property.FindPropertyRelative(_modeBacking);
 
             if (sceneProp == null || modeProp == null)
             {
