@@ -1,18 +1,33 @@
 {
   "name": "com.calluna.scenemanagement",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "displayName": "Calluna Unity Scene Management",
-  "description": "",
-  "unity": "6000.58",
+  "description": "Scene management for Unity scenes",
+  "unity": "6000.33",
   "unityRelease": "",
   "documentationUrl": "https://github.com/CallunaGames/UnitySceneManagement",
-  "changelogUrl": "",
+  "changelogUrl": "https://github.com/CallunaGames/UnitySceneManagement/commit/v1.0.0",
   "licensesUrl": "",
   "dependencies": {
-    
- },
- "keywords": [
-    
+    "com.calluna.process": "1.0.1",
+    "com.calluna.core": "1.0.3",
+    "com.calluna.di": "1.0.1"
+  },
+  "samples": [
+    {
+      "displayName": "Additional Loading",
+      "description": "Example of additionally loaded scenes",
+      "path": "Samples~/AdditionalLoading"
+    },
+    {
+      "displayName": "Exclusive Loading",
+      "description": "Example of exclusively loaded scenes",
+      "path": "Samples~/ExclusiveLoading"
+    }
+  ],
+  "keywords": [
+    "scenes",
+    "scene management"
   ],
   "author": {
     "name": "Calluna Games",

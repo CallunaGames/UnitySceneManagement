@@ -1,0 +1,18 @@
+{
+    "name": "Calluna.SceneManagement.Samples.ExclusiveLoadingExample",
+    "rootNamespace": "Calluna.SceneManagement.Samples",
+    "references": [
+        "GUID:304ac9cfd49b6b345bb5846fc5367e38",
+        "GUID:a4e2fcc097ca52d46a2cc62ef3c5e9bf",
+        "GUID:5893009818d5b804aae6455019df9391"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

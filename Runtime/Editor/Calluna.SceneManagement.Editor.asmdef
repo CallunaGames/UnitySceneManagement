@@ -1,8 +1,8 @@
 {
-    "name": "Calluna.Template.Samples",
-    "rootNamespace": "Calluna.Process.Samples",
+    "name": "Calluna.SceneManagement.Editor",
+    "rootNamespace": "Calluna.SceneManagement.Editor",
     "references": [
-        "GUID:6e11b6063e739f6468948dab11caf494"
+        "GUID:304ac9cfd49b6b345bb5846fc5367e38"
     ],
     "includePlatforms": [
         "Editor"
@@ -11,7 +11,7 @@
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
-    "autoReferenced": false,
+    "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
