@@ -1,19 +1,36 @@
 {
   "name": "com.calluna.scenemanagement",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Calluna Unity Scene Management",
   "description": "Scene management for Unity scenes",
   "unity": "6000.33",
   "unityRelease": "",
   "documentationUrl": "https://github.com/CallunaGames/UnitySceneManagement",
-  "changelogUrl": "https://github.com/CallunaGames/UnitySceneManagement/commits/v1.0.0",
+  "changelogUrl": "https://github.com/CallunaGames/UnitySceneManagement/compare/v1.0.0...v1.0.1",
   "licensesUrl": "",
   "dependencies": {
-    "com.calluna.unityprocess": "https://github.com/CallunaGames/CallunaUnityProcess.git#v1.0.0",
-    "com.calluna.unitycore": "https://github.com/CallunaGames/CallunaUnityCore.git#v1.0.0",
-    "com.calluna.unitydi": "https://github.com/CallunaGames/CallunaUnityDI.git#v1.0.0"
- },
- "keywords": [
+    "com.calluna.process": "1.0.1",
+    "com.calluna.core": "1.0.3",
+    "com.calluna.di": "1.0.1"
+  },
+  "samples": [
+    {
+      "displayName": "Additional Loading",
+      "description": "Example of additionally loaded scenes",
+      "path": "Samples~/AdditionalLoading"
+    },
+    {
+      "displayName": "Exclusive Loading",
+      "description": "Example of exclusively loaded scenes",
+      "path": "Samples~/ExclusiveLoading"
+    },
+    {
+      "displayName": "Loadable Scenes",
+      "description": "Example of laodable scenes",
+      "path": "Samples~/LoadableScenes"
+    }
+  ],
+  "keywords": [
     "scenes",
     "scene management"
   ],
