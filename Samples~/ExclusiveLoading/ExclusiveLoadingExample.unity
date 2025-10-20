@@ -261,15 +261,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 785251390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 934e0086e38cb164696079359540720a, type: 3}
+  m_Script: {fileID: 11500000, guid: c0dc2e86946624245863b89cf66e752f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _processor: {fileID: 496680333}
   _executor: {fileID: 496680335}
   _settings:
-    <LoggerName>k__BackingField: Scene Loader
-    <RunningProcessLogFrequency>k__BackingField: 0
-    <LoggerTypeColor>k__BackingField: {r: 0.8867924, g: 0.69417197, b: 0.24819027, a: 1}
+    <LoggerName>k__BackingField: Process Logger
+    <RunningProcessLogFrequency>k__BackingField: 0.5
+    <LoggerTypeColor>k__BackingField: {r: 0, g: 0.3, b: 0.7, a: 1}
     <StatusColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1863113786
 GameObject:

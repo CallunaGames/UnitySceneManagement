@@ -1,5 +1,5 @@
 {
-    "name": "Calluna.SceneManagement.Samples",
+    "name": "Calluna.SceneManagement.Samples.AdditionalLoading",
     "rootNamespace": "Calluna.SceneManagement.Samples",
     "references": [
         "GUID:304ac9cfd49b6b345bb5846fc5367e38",

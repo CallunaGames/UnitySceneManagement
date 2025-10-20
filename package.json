@@ -23,11 +23,6 @@
       "displayName": "Exclusive Loading",
       "description": "Example of exclusively loaded scenes",
       "path": "Samples~/ExclusiveLoading"
-    },
-    {
-      "displayName": "Loadable Scenes",
-      "description": "Example of loadable scenes",
-      "path": "Samples~/LoadableScenes"
     }
   ],
   "keywords": [
