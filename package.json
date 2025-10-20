@@ -1,12 +1,12 @@
 {
   "name": "com.calluna.scenemanagement",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "displayName": "Calluna Unity Scene Management",
   "description": "Scene management for Unity scenes",
   "unity": "6000.33",
   "unityRelease": "",
   "documentationUrl": "https://github.com/CallunaGames/UnitySceneManagement",
-  "changelogUrl": "https://github.com/CallunaGames/UnitySceneManagement/compare/v1.0.0...v1.0.1",
+  "changelogUrl": "https://github.com/CallunaGames/UnitySceneManagement/commit/v1.0.0",
   "licensesUrl": "",
   "dependencies": {
     "com.calluna.process": "1.0.1",
@@ -26,7 +26,7 @@
     },
     {
       "displayName": "Loadable Scenes",
-      "description": "Example of laodable scenes",
+      "description": "Example of loadable scenes",
       "path": "Samples~/LoadableScenes"
     }
   ],
