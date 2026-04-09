@@ -9,9 +9,9 @@
   "changelogUrl": "https://github.com/CallunaGames/UnitySceneManagement/commit/v1.0.0",
   "licensesUrl": "",
   "dependencies": {
-    "com.calluna.process": "https://github.com/CallunaGames/CallunaUnityProcess.git#v1.0.1",
-    "com.calluna.core": "https://github.com/CallunaGames/CallunaUnityCore.git#v1.2.0",
-    "com.calluna.di": "https://github.com/CallunaGames/CallunaUnityDI.git#v1.3.1"
+    "com.calluna.process": "1.0.1",
+    "com.calluna.core": "1.2.0",
+    "com.calluna.di": "1.3.1"
   },
   "samples": [
     {
